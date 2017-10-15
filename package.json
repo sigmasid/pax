@@ -1,0 +1,29 @@
+{
+  "name": "pax",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.13"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "chart.js": "^2.7.0",
+    "chartjs-plugin-datalabels": "^0.1.0",
+    "firebase": "^4.5.0",
+    "jquery": "^3.2.1",
+    "react": "^16.0.0",
+    "react-autosuggest": "^9.3.2",
+    "react-bootstrap-slider": "^2.1.0",
+    "react-chartjs-2": "^2.6.2",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^1.2.1",
+    "reactstrap": "^5.0.0-alpha.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import './bootstrap-slider.css';
+
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a:link, a:visited {
+  color: #ffc107;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border .3s ease-in-out,color .3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffc107;
+  border-color: #ffc107;
+  transition: border .1s ease-in-out,color .1s ease-in-out;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 0px 15px;
+  border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+}
+
+.round.hollow {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    -moz-border-radius: 37.5px;
+    border-radius: 37.5px;
+    background-color: #FFF;    
+    color: #222;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.75);
+}
+
+.round.hollow.sm {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: none;    
+    color: #868e96;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 0px 3px #868e96;
+    -moz-box-shadow: 0px 0px 0px 3px #868e96;
+    box-shadow: 0px 0px 0px 3px #868e96;
+}
+
+.round.hollow.sm.active {
+    background-color: #FFF;    
+    color: #222;
+    -webkit-box-shadow: 0px 0px 0px 3px #ffc107;
+    -moz-box-shadow: 0px 0px 0px 3px #ffc107;
+    box-shadow: 0px 0px 0px 3px #ffc107;
+}
+
+/** LAYOUT ITEMS **/
+.Container-main {
+  min-height: 95vh;
+  padding-bottom: 20px;
+  padding-top: 100px;
+  background-color: rgba(230, 230, 230, 0.2)
+}
+
+.w-90 {
+  width: 90% !important
+}
+
+.w-40 {
+  width: 40% !important
+}
+
+.w-20 {
+  width: 20% !important
+}
+
+.w-10 {
+  width: 10% !important
+}
+
+.card-subtitle {
+  color: #868e96 !important;
+}
+
+.absolute-wrapper {
+  position: absolute;
+}
+
+.vh-70 {
+  height: 70vh;
+}
+
+.vh-80 {
+  height: 80vh;
+}
+
+@media (max-width: 575px) {
+  .Container-main {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .Container-home, .Dashboard-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .card-body {
+    padding: 0.75rem;
+  }
+
+  .card-subtitle{
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+  }
+}
+
+/** NAVBAR **/
+.top-nav{
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  padding-right: 10px
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.signup-nav-item {
+  //background-color: #3DC7E8;
+  border-radius: 5px
+}
+
+.signup-nav-item a {
+  text-align: center;
+}
+/** END: TOP NAV **/
+
+/** HOME PAGE **/
+.Container-index {
+  padding-top: 60px;
+}
+
+.Home-section {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.Home-section .card, .Home-section li{
+  border: 0px;
+}
+
+.Home-section .card {
+  background: none;
+}
+
+.Home-section .carousel, .Home-section .carousel-inner  {
+  height: 100% !important;
+  background: none;
+}
+
+.Home-section .carousel-item img{
+  margin: 0 auto;
+  align-items: center;
+}
+
+.Home-section .carousel-caption {
+  position: static;
+}
+
+.Home-section .Head-start {
+  position: absolute;
+  align-self: flex-start !important;
+}
+
+.Home-section .btn-lg {
+  padding: 0.5rem 2.0rem;
+}
+
+.college-search-results {
+  z-index: 1000;
+  top: 100;
+}
+
+.college-search img {
+  width: 20px;
+  height: auto;
+}
+
+.Home-section .college-card, .Dashboard-component .college-card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.Home-section .college-card .card-header, .Dashboard-component .college-card .card-header {
+  background: none;
+  border-bottom: 0px;
+}
+
+.Home-section .college-card .card-subtitle, .Dashboard-component .college-card .card-subtitle  {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.Home-section .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.Home-section .carousel-indicators .active {
+  background: white;
+}
+
+.Home-section .carousel-caption {
+  display: block !important;
+}
+
+.Home-section .carousel-caption h3 {
+  color: white;
+  font-weight: 700;
+}
+
+.Home-section .carousel-caption p {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+}
+
+.Home-section .contribution-0 {
+  background-color: #00dea6 !important;
+}
+
+.Home-section .contribution-1 {
+  background-color: #b591f5 !important;  
+}
+
+.Home-section .contribution-2 {
+  background-color: #ff3d5e !important;  
+}
+
+
+.Home-section .card-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.Intro-section {
+  margin-top: 0;
+  background-image: url('./images/home_intro_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.Intro-section input {
+  font-size: 3.0rem;
+  background: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.cost-surprise {
+  background-color: #ffc107;
+  background-image: url('./images/college-cost-surprise.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.cost-surprise-text {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.join-section .form-group {
+  width: 90%;
+}
+
+.join-section button {
+  width: 10%;
+}
+
+@media (min-width: 1200px) {
+  .Home-section {
+    min-height: 80vh; 
+    height: auto;
+  }
+
+  .Home-section .Head-start {
+    padding-left: 3rem;
+    margin-left: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .Home-section {
+    height: auto;
+    min-height: 70vh; 
+  }
+
+  .Home-section .carousel-caption p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {  
+  .Home-section .Head-start {
+    padding-left: 2rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .Home-section .carousel {
+    min-height: 75vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .Home-section {
+    min-height: 60vh; 
+    height: auto;
+  }
+
+  .Home-section .Head-start {
+    position: relative;
+    margin-left: auto;
+  }
+
+  .Home-section .carousel {
+    padding-bottom: 2rem;
+    min-height: 60vh;
+  }
+
+  .join-section .form-group {
+    width: 80%;
+  }
+
+  .join-section button {
+    width: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  .Intro-section input {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .Home-section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .Intro-section {
+    margin-top: 0rem;
+  }
+
+  .Intro-section input {
+    width: 100%;
+    font-size: 2.0rem;
+  }
+
+  .join-section .form-group {
+    width: 75%;
+  }
+
+  .join-section button {
+    width: 25%;
+  }
+}
+
+/** START: SIGNUP FORM **/
+.Signup-form {
+  max-width: 570px;
+}
+
+.Signup-form .card-header {
+  padding-top: 30px;
+  background: none;
+  border: 0px;
+}
+
+.Signup-form .card-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Signup-form button {
+  margin-top: 50px;
+}
+
+/** DASHBOARD **/
+.Dashboard-container .card-header {
+  background: none;
+  border: 0px solid;
+}
+
+.Dashboard-container .btn-group {
+  width: 100%;
+}
+
+.Dashboard-container .Investment-buttons button {
+  width: 33%;
+}
+
+/**
+.Dashboard-container .Update-button {
+  border: 1px solid grey;
+  border-radius: 0px;
+  background: none;
+  color: black;
+  max-width: 150px;
+  max-height: 50px;
+  cursor: pointer;
+  font-size: 0.75rem;
+} **/
+
+.Dashboard-container .Update-button img {
+  height: 20px;
+  padding-right: 5px;
+  width: auto;
+}
+
+.Dashboard-container .card-footer {
+  background: none;
+  border: 0px solid;
+}
+
+.Dashboard-component .media img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.Dashboard-component .media-heading, .setup-steps .media-heading, .setup-steps .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Dashboard-component .Strategy-slider {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.Dashboard-component .Investment-mix {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Dashboard-component .Learn-more {
+  font-size: 0.8rem;
+  border: 0px;
+  background: none;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .Dashboard-container .Update-button {
+    border: 0px;
+  }
+}
+
+/** SETUP PLAN **/
+.setup-steps .card-header, .setup-steps .card-body, .setup-steps .card-footer {
+  padding: 0.5rem 0.75rem
+}
+
+.setup-steps .media img {
+  max-width: 20px;
+  margin-right: 0;
+}
