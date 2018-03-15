@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, Media, CardSubtitle, CardFooter, Button } from 'reactstrap';
+import { Card, CardBody, CardSubtitle } from 'reactstrap';
 import bankImage from '../images/bank_icon_2x.png'; // Tell Webpack this JS file uses this image
 import { ProcessStepHeader } from './ProcessStepHeader.js';
 
-class ConnectBank extends Component  {
+class PickBank extends Component  {
   constructor (props) {
     super(props);
 
@@ -26,4 +26,4 @@ class ConnectBank extends Component  {
   }
 }
 
-export default ConnectBank;
+export default PickBank;

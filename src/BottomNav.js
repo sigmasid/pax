@@ -10,17 +10,9 @@ export default class BottomNav extends Component {
     return(
     <Container>
       <Navbar className="header" light>
-        <Nav className="ml-auto">
+        <Nav className="m-auto">
           <NavItem>
             <Link to="/signup">About</Link>
-          </NavItem>
-
-          <NavItem>
-            <Link to={`/privacy`}>Privacy</Link>
-          </NavItem>
-          
-          <NavItem>
-            <Link to={`/terms`}>Terms</Link>
           </NavItem>
         </Nav>
       </Navbar>

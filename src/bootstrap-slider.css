@@ -207,7 +207,7 @@
 }
 
 .slider-selection.tick-slider-selection {
-    background-color: rgba(255, 212, 90, 1.0);
+    background-color: rgba(255, 235, 59, 1);
     /**
     background-image: -webkit-linear-gradient(top, #89cdef 0, #81bfde 100%);
     background-image: -o-linear-gradient(top, #89cdef 0, #81bfde 100%);
@@ -232,7 +232,7 @@
     top: -5px;
     width: 30px;
     height: 30px;
-    background-color: #ffc107;
+    background-color: #ffeb3b;
     /**background-image: -webkit-linear-gradient(top, #149bdf 0, #0480be 100%);
     background-image: -o-linear-gradient(top, #149bdf 0, #0480be 100%);
     background-image: linear-gradient(to bottom, #149bdf 0, #0480be 100%);

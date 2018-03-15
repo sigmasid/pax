@@ -48,9 +48,11 @@ export class CollegeSearch extends Component {
 
   	return(
       <InputGroup className="college-search">
-    		<Input placeholder={GetFirstCollege['Name']} onChange={event => this.handleChange(event)} />
+    		<Input className="college-search-bar" placeholder={GetFirstCollege['Name']} onChange={event => this.handleChange(event)} />
     		<InputGroupButton>
-    			<Button className="rounded" color="warning"><img src={searchIcon}/></Button>
+    			<Button  className="bg-none border-0 rounded">
+            <img src={searchIcon} alt="Search Colleges"/>
+          </Button>
     		</InputGroupButton>
         <ListGroup className="college-search-results absolute-wrapper w-100 mt-5 mb-2">{this.state.results.length !== 0 ? this.state.results.map(createItem) : null }</ListGroup>
   		</InputGroup>

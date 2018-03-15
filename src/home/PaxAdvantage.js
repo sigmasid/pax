@@ -4,13 +4,12 @@ import doneImage from '../images/done_single_2x.png'; // Tell Webpack this JS fi
 
 class PaxAdvantage extends Component {
 	render() {
-		var simpleList = ["Simple Age Based Portfolios", "Personalized Dashboard", "Automatic Rebalancing", "Micro Investing Options", "Friends + Family Contributions"];
-		var costList = ["$0 Minimum Balance", "$0 Account Fees", "$0 Management Fees", "0.25% Fee on Assets Managed"];
+		var simpleList = ["2 Min On-Boarding", "Guide to Best Savings Plans", "Personalized Goals Dashboard", "Automated Account Reviews", "Micro Investing Options", "Friends + Family Contributions"];
 
     var createItem = function(advantage, index) {
       return(
         <ListGroupItem key={index} action className="text-left">
-          <Button className="btn-circle mr-3" color="warning" disabled><img className="img-fluid" src={doneImage } alt="..." /></Button>
+          <Button className="btn-circle mr-3" color="white" disabled><img className="img-fluid" src={doneImage } alt="..." /></Button>
         		<span className="text-secondary">{advantage}</span>
         </ListGroupItem>
     	)};
@@ -20,15 +19,16 @@ class PaxAdvantage extends Component {
 					<Col xs={12} lg={8} className="ml-auto text-center align-self-center">
 						<Card className="border-0">
 							<CardBody>
-								<CardTitle className="display-4">Pax Advantage</CardTitle>
-								<CardSubtitle>Simple + Low Cost</CardSubtitle>
-								<Row className="pt-3">
-									<Col xs={12} sm={6} xl={4} className="align-self-top ml-auto">
-				  					<ListGroup>{costList.map(createItem)}</ListGroup>
+								<CardTitle>Pax Advantage</CardTitle>
+								<CardSubtitle>Smart Advice + Simple Management</CardSubtitle>
+								<Row className="pt-5 pt-md-3">
+									<Col xs={12} sm={8} xl={6} className="align-self-top m-auto">
+				  					<ListGroup>{simpleList.map(createItem)}</ListGroup>
 	        				</Col>
+	        				{/* 
   				        <Col xs={12} sm={6} xl={4} className="align-self-top mr-auto pt-3 pt-sm-0">
 								  	<ListGroup>{simpleList.map(createItem)}</ListGroup>
-					        </Col>
+					        </Col> */}
 				        </Row>
 							</CardBody>
 						</Card>

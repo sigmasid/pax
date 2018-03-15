@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { CardHeader, Row, Col, Card, Button, CardBody, Media, CardSubtitle, CardFooter } from 'reactstrap';
-import doneImage from '../images/done_icon_2x.png'; // Tell Webpack this JS file uses this image
+import React from 'react';
+import { CardHeader, Row, Col, Button, Media, CardSubtitle } from 'reactstrap';
 
 export const ProcessStepHeader = (step, image, save, index) => {
   return(

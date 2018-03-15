@@ -88,13 +88,13 @@ class ContributionOptions extends Component {
     }
   	
   	return(
-  		<div className="Home-section">
-  		<Row className="align-items-center h-100">
+  		<div className="Home-section d-flex d-md-block">
+  		<Row className="align-items-center h-100 align-self-center">
 				<Col xs={12} sm={5} className="ml-auto">
 					<Card>
 						<CardBody>
-      				<CardTitle className="display-4 text-center text-sm-left">Every Dollar Counts</CardTitle>
-      				<CardSubtitle className="text-center text-sm-left">It takes a village to raise a child, Pax helps bring them together!</CardSubtitle>
+      				<CardTitle>Every Dollar Counts</CardTitle>
+      				<CardSubtitle>It takes a village to raise a child, Pax helps bring them together!</CardSubtitle>
       			</CardBody>
     			</Card>
     		</Col>

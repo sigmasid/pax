@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Route, Switch } from 'react-router-dom'
 import { Container } from 'reactstrap';
 import * as firebase from "firebase";
 
 import TopNav from './TopNav.js'; 
 import BottomNav from './BottomNav.js';
+import JoinList from './home/JoinList.js';
+
 import Signup from './Signup.js'; 
 import Dashboard from './Dashboard.js'; 
 import Login from './Login.js'; 
 import Home from './Home.js'; 
-import Plan from './plan/CreatePlan.js'; 
+//import Plan from './plan/CreatePlan.js'; 
+import Plan from './choosePlan/PickPlan.js'; 
 
-import logo from './logo.svg';
 import './App.css';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -27,6 +28,11 @@ var config = {
 };
 firebase.initializeApp(config);
 
+String.prototype.toProperCase = function(opt_lowerCaseTheRest) {
+  return (opt_lowerCaseTheRest ? this.toLowerCase() : this)
+    .replace(/(^|[\s\xA0])[^\s\xA0]/g, function(s){ return s.toUpperCase(); });
+};
+
 class App extends Component {
   render() {
     return (
@@ -39,7 +45,8 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/plan" component={Plan} />
         </Switch>
-        <BottomNav />
+        <JoinList />
+        <BottomNav /> 
       </Container>
     );
   }

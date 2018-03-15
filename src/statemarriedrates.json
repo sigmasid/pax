@@ -1,0 +1,948 @@
+﻿{
+   "alabama": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 1000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 6000,
+         "Married Rate": 0.05
+      }
+   ],
+   "alaska": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "arizona": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0259
+      },
+      {
+         "Married Bracket": 20000,
+         "Married Rate": 0.0288
+      },
+      {
+         "Married Bracket": 50000,
+         "Married Rate": 0.0336
+      },
+      {
+         "Married Bracket": 100000,
+         "Married Rate": 0.0424
+      },
+      {
+         "Married Bracket": 300000,
+         "Married Rate": 0.0454
+      }
+   ],
+   "arkansas": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.009
+      },
+      {
+         "Married Bracket": 4299,
+         "Married Rate": 0.025
+      },
+      {
+         "Married Bracket": 8399,
+         "Married Rate": 0.035
+      },
+      {
+         "Married Bracket": 12599,
+         "Married Rate": 0.045
+      },
+      {
+         "Married Bracket": 20999,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 35099,
+         "Married Rate": 0.069
+      }
+   ],
+   "california": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.01
+      },
+      {
+         "Married Bracket": 15700,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 37220,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 58744,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 81546,
+         "Married Rate": 0.08
+      },
+      {
+         "Married Bracket": 103060,
+         "Married Rate": 0.093
+      },
+      {
+         "Married Bracket": 526444,
+         "Married Rate": 0.103
+      },
+      {
+         "Married Bracket": 631732,
+         "Married Rate": 0.113
+      },
+      {
+         "Married Bracket": 1000000,
+         "Married Rate": 0.123
+      },
+      {
+         "Married Bracket": 1052886,
+         "Married Rate": 0.133
+      }
+   ],
+   "colorado": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0463
+      }
+   ],
+   "connecticut": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 20000,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 100000,
+         "Married Rate": 0.055
+      },
+      {
+         "Married Bracket": 200000,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 400000,
+         "Married Rate": 0.065
+      },
+      {
+         "Married Bracket": 500000,
+         "Married Rate": 0.069
+      },
+      {
+         "Married Bracket": 1000000,
+         "Married Rate": 0.0699
+      }
+   ],
+   "delaware": [
+      {
+         "Married Bracket": 2000,
+         "Married Rate": 0.022
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.039
+      },
+      {
+         "Married Bracket": 10000,
+         "Married Rate": 0.048
+      },
+      {
+         "Married Bracket": 20000,
+         "Married Rate": 0.052
+      },
+      {
+         "Married Bracket": 25000,
+         "Married Rate": 0.0555
+      },
+      {
+         "Married Bracket": 60000,
+         "Married Rate": 0.066
+      }
+   ],
+   "florida": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "georgia": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.01
+      },
+      {
+         "Married Bracket": 1000,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 3000,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 7000,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 10000,
+         "Married Rate": 0.06
+      }
+   ],
+   "hawaii": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.014
+      },
+      {
+         "Married Bracket": 4800,
+         "Married Rate": 0.032
+      },
+      {
+         "Married Bracket": 9600,
+         "Married Rate": 0.055
+      },
+      {
+         "Married Bracket": 19200,
+         "Married Rate": 0.064
+      },
+      {
+         "Married Bracket": 28800,
+         "Married Rate": 0.068
+      },
+      {
+         "Married Bracket": 38400,
+         "Married Rate": 0.072
+      },
+      {
+         "Married Bracket": 48000,
+         "Married Rate": 0.076
+      },
+      {
+         "Married Bracket": 72000,
+         "Married Rate": 0.079
+      },
+      {
+         "Married Bracket": 96000,
+         "Married Rate": 0.0825
+      }
+   ],
+   "idaho": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.016
+      },
+      {
+         "Married Bracket": 2904,
+         "Married Rate": 0.036
+      },
+      {
+         "Married Bracket": 5808,
+         "Married Rate": 0.041
+      },
+      {
+         "Married Bracket": 8712,
+         "Married Rate": 0.051
+      },
+      {
+         "Married Bracket": 11616,
+         "Married Rate": 0.061
+      },
+      {
+         "Married Bracket": 14520,
+         "Married Rate": 0.071
+      },
+      {
+         "Married Bracket": 21780,
+         "Married Rate": 0.074
+      }
+   ],
+   "illinois": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0375
+      }
+   ],
+   "indiana": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.033
+      }
+   ],
+   "iowa": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0036
+      },
+      {
+         "Married Bracket": 1554,
+         "Married Rate": 0.0072
+      },
+      {
+         "Married Bracket": 3108,
+         "Married Rate": 0.0243
+      },
+      {
+         "Married Bracket": 6216,
+         "Married Rate": 0.045
+      },
+      {
+         "Married Bracket": 13896,
+         "Married Rate": 0.0612
+      },
+      {
+         "Married Bracket": 23310,
+         "Married Rate": 0.0648
+      },
+      {
+         "Married Bracket": 31080,
+         "Married Rate": 0.068
+      },
+      {
+         "Married Bracket": 46620,
+         "Married Rate": 0.0792
+      },
+      {
+         "Married Bracket": 69930,
+         "Married Rate": 0.0898
+      }
+   ],
+   "kansas": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.027
+      },
+      {
+         "Married Bracket": 30000,
+         "Married Rate": 0.046
+      }
+   ],
+   "kentucky": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 3000,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 4000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 8000,
+         "Married Rate": 0.058
+      },
+      {
+         "Married Bracket": 75000,
+         "Married Rate": 0.06
+      }
+   ],
+   "louisiana": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 25000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 100000,
+         "Married Rate": 0.06
+      }
+   ],
+   "maine": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.058
+      },
+      {
+         "Married Bracket": 42099,
+         "Married Rate": 0.0675
+      },
+      {
+         "Married Bracket": 74999,
+         "Married Rate": 0.0715
+      }
+   ],
+   "maryland": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 1000,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 2000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 3000,
+         "Married Rate": 0.0475
+      },
+      {
+         "Married Bracket": 150000,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 175000,
+         "Married Rate": 0.0525
+      },
+      {
+         "Married Bracket": 225000,
+         "Married Rate": 0.055
+      },
+      {
+         "Married Bracket": 300000,
+         "Married Rate": 0.0575
+      }
+   ],
+   "massachusetts": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.051
+      }
+   ],
+   "michigan": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0425
+      }
+   ],
+   "minnesota": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0535
+      },
+      {
+         "Married Bracket": 36820,
+         "Married Rate": 0.0705
+      },
+      {
+         "Married Bracket": 146270,
+         "Married Rate": 0.0785
+      },
+      {
+         "Married Bracket": 259420,
+         "Married Rate": 0.0985
+      }
+   ],
+   "mississippi": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 10000,
+         "Married Rate": 0.05
+      }
+   ],
+   "missouri": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.015
+      },
+      {
+         "Married Bracket": 1000,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 2000,
+         "Married Rate": 0.025
+      },
+      {
+         "Married Bracket": 3000,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 4000,
+         "Married Rate": 0.035
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 6000,
+         "Married Rate": 0.045
+      },
+      {
+         "Married Bracket": 7000,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 8000,
+         "Married Rate": 0.055
+      },
+      {
+         "Married Bracket": 9000,
+         "Married Rate": 0.06
+      }
+   ],
+   "montana": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.01
+      },
+      {
+         "Married Bracket": 2900,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 5100,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 7800,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 10500,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 13500,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 17400,
+         "Married Rate": 0.069
+      }
+   ],
+   "nebraska": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0246
+      },
+      {
+         "Married Bracket": 6120,
+         "Married Rate": 0.0351
+      },
+      {
+         "Married Bracket": 36730,
+         "Married Rate": 0.0501
+      },
+      {
+         "Married Bracket": 59180,
+         "Married Rate": 0.0684
+      }
+   ],
+   "nevada": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "new hampshire": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.05
+      }
+   ],
+   "new jersey": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.014
+      },
+      {
+         "Married Bracket": 20000,
+         "Married Rate": 0.0175
+      },
+      {
+         "Married Bracket": 50000,
+         "Married Rate": 0.0245
+      },
+      {
+         "Married Bracket": 70000,
+         "Married Rate": 0.035
+      },
+      {
+         "Married Bracket": 80000,
+         "Married Rate": 0.05525
+      },
+      {
+         "Married Bracket": 150000,
+         "Married Rate": 0.0637
+      },
+      {
+         "Married Bracket": 500000,
+         "Married Rate": 0.0897
+      }
+   ],
+   "new mexico": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.017
+      },
+      {
+         "Married Bracket": 8000,
+         "Married Rate": 0.032
+      },
+      {
+         "Married Bracket": 16000,
+         "Married Rate": 0.047
+      },
+      {
+         "Married Bracket": 24000,
+         "Married Rate": 0.049
+      }
+   ],
+   "new york": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 17050,
+         "Married Rate": 0.045
+      },
+      {
+         "Married Bracket": 23450,
+         "Married Rate": 0.0525
+      },
+      {
+         "Married Bracket": 27750,
+         "Married Rate": 0.059
+      },
+      {
+         "Married Bracket": 42750,
+         "Married Rate": 0.0645
+      },
+      {
+         "Married Bracket": 160500,
+         "Married Rate": 0.0665
+      },
+      {
+         "Married Bracket": 321050,
+         "Married Rate": 0.0685
+      },
+      {
+         "Married Bracket": 2140900,
+         "Married Rate": 0.0882
+      }
+   ],
+   "north carolina": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0575
+      }
+   ],
+   "north dakota": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.011
+      },
+      {
+         "Married Bracket": 62600,
+         "Married Rate": 0.0204
+      },
+      {
+         "Married Bracket": 151200,
+         "Married Rate": 0.0227
+      },
+      {
+         "Married Bracket": 230450,
+         "Married Rate": 0.0264
+      },
+      {
+         "Married Bracket": 411500,
+         "Married Rate": 0.029
+      }
+   ],
+   "ohio": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.00495
+      },
+      {
+         "Married Bracket": 5200,
+         "Married Rate": 0.0099
+      },
+      {
+         "Married Bracket": 10400,
+         "Married Rate": 0.0198
+      },
+      {
+         "Married Bracket": 15650,
+         "Married Rate": 0.02476
+      },
+      {
+         "Married Bracket": 20900,
+         "Married Rate": 0.02969
+      },
+      {
+         "Married Bracket": 41700,
+         "Married Rate": 0.03465
+      },
+      {
+         "Married Bracket": 83350,
+         "Married Rate": 0.0396
+      },
+      {
+         "Married Bracket": 104250,
+         "Married Rate": 0.04597
+      },
+      {
+         "Married Bracket": 208500,
+         "Married Rate": 0.04997
+      }
+   ],
+   "oklahoma": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.005
+      },
+      {
+         "Married Bracket": 2000,
+         "Married Rate": 0.01
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 7500,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 9800,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 12200,
+         "Married Rate": 0.05
+      }
+   ],
+   "oregon": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 6500,
+         "Married Rate": 0.07
+      },
+      {
+         "Married Bracket": 16300,
+         "Married Rate": 0.09
+      },
+      {
+         "Married Bracket": 250000,
+         "Married Rate": 0.099
+      }
+   ],
+   "pennsylvania": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0307
+      }
+   ],
+   "rhode island": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0375
+      },
+      {
+         "Married Bracket": 60850,
+         "Married Rate": 0.0475
+      },
+      {
+         "Married Bracket": 138300,
+         "Married Rate": 0.0599
+      }
+   ],
+   "south carolina": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      },
+      {
+         "Married Bracket": 2920,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 5840,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 8760,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 11680,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 14600,
+         "Married Rate": 0.07
+      }
+   ],
+   "south dakota": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "tennessee": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.06
+      }
+   ],
+   "texas": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "utah": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.05
+      }
+   ],
+   "vermont": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.0355
+      },
+      {
+         "Married Bracket": 69900,
+         "Married Rate": 0.068
+      },
+      {
+         "Married Bracket": 160450,
+         "Married Rate": 0.078
+      },
+      {
+         "Married Bracket": 240000,
+         "Married Rate": 0.088
+      },
+      {
+         "Married Bracket": 421900,
+         "Married Rate": 0.0895
+      }
+   ],
+   "virginia": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.02
+      },
+      {
+         "Married Bracket": 3000,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 5000,
+         "Married Rate": 0.05
+      },
+      {
+         "Married Bracket": 17000,
+         "Married Rate": 0.0575
+      }
+   ],
+   "washington": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "west virginia": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.03
+      },
+      {
+         "Married Bracket": 10000,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 25000,
+         "Married Rate": 0.045
+      },
+      {
+         "Married Bracket": 40000,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 60000,
+         "Married Rate": 0.065
+      }
+   ],
+   "wisconsin": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 14820,
+         "Married Rate": 0.0584
+      },
+      {
+         "Married Bracket": 29640,
+         "Married Rate": 0.0627
+      },
+      {
+         "Married Bracket": 326330,
+         "Married Rate": 0.0765
+      }
+   ],
+   "wymoing": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0
+      }
+   ],
+   "district of columbia": [
+      {
+         "Married Bracket": 0,
+         "Married Rate": 0.04
+      },
+      {
+         "Married Bracket": 10000,
+         "Married Rate": 0.06
+      },
+      {
+         "Married Bracket": 40000,
+         "Married Rate": 0.065
+      },
+      {
+         "Married Bracket": 60000,
+         "Married Rate": 0.085
+      },
+      {
+         "Married Bracket": 350000,
+         "Married Rate": 0.0875
+      },
+      {
+         "Married Bracket": 1000000,
+         "Married Rate": 0.0895
+      }
+   ]
+}

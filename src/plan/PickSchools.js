@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col, Button, Card, CardBody, CardTitle, Fade, CardHeader, Media, CardSubtitle, CardFooter, ListGroup, ListGroupItem } from 'reactstrap';
+import { Row, Col, Button, Card, CardBody, CardTitle, Fade, CardSubtitle, CardFooter, ListGroup, ListGroupItem } from 'reactstrap';
 import scholarImage from '../images/scholar_icon_2x.png'; // Tell Webpack this JS file uses this image
 import { ProcessStepHeader } from './ProcessStepHeader.js';
 import { CollegeSearch } from '../home/CollegeSearch.js';
@@ -84,6 +84,12 @@ class PickSchools extends Component  {
     </div>
   );
   }
+}
+
+PickSchools.propTypes = {
+  step: PropTypes.object.isRequired,
+  save: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired
 }
 
 export default PickSchools;

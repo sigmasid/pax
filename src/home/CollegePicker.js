@@ -26,7 +26,7 @@ class CollegeCostChart extends Component {
 		  datasets: 
       [{
       	label: 'Annual Cost of College',
-        backgroundColor:["rgba(255,247,223,1.0)",'rgba(255,193,7,1.0)'],
+        backgroundColor:["rgba(255, 235, 59, 0.3)",'rgba(255, 235, 59, 0.9)'],
 	      data: this.props.costData,
         datalabels: {
           align: 'end',
@@ -35,17 +35,16 @@ class CollegeCostChart extends Component {
 	    }]
 		  }
 		}
-    var collegeName = this.props.collegeName;
 
     return (
-        <Bar data={data} height={400} width={400} options={{
+        <Bar data={data} height={window.innerWidth < 960 ? 500 : 600} width={400} options={{
           legend: {
             display: false,
           },
           maintainAspectRatio: false,
           plugins: {
             datalabels: {
-              color: 'black',
+              color: '#102027',
               display: function(context) {
                 return context.dataset.data[context.dataIndex] > 15;
               },
@@ -61,17 +60,17 @@ class CollegeCostChart extends Component {
           },
           title: {
             display: true,
-            position: 'bottom',
+            position: 'top',
             text: this.props.collegeName,
             fontFamily: 'Roboto',
             fontSize: 20,
-            padding: 20,
+            padding: window.innerWidth < 960 ? 40 : 100,
           },
           layout: {
             padding: {
                 left: 0,
                 right: 0,
-                top: 50,
+                top: window.innerWidth < 960 ? 0 : 50,
                 bottom: 0
             }
         	},
@@ -117,7 +116,7 @@ function futureCostCalculator(current, years) {
 
 const fourYearCost = (collegeName, cost) => {
   return(
-  <Alert color="warning" className="text-center">
+  <Alert className="Pax-alert text-center">
     In 18 years, <strong>{ collegeName }</strong> is expected to cost <strong>{ formatter.format(Math.round(cost * 4)) }</strong> for 4 years including tuition and room & board.
   </Alert>);
 }
@@ -147,16 +146,16 @@ class CollegePicker extends Component {
 				<Col xs={12} lg={5} className="ml-auto align-self-center">
           <Card>
             <CardBody>
-              <CardTitle className="display-4 text-center text-sm-left">How Much Will College Cost?</CardTitle>
-              <CardSubtitle className="text-center text-sm-left pb-5">College prices are increasing at 2x rate of inflation! See how much their 'Dream College' will likely cost.</CardSubtitle>
+              <CardTitle className="text-left">How Much Will College Cost?</CardTitle>
+              <CardSubtitle className="text-left pb-5">College prices are increasing at 2x rate of inflation! See how much their 'Dream College' will likely cost.</CardSubtitle>
     		      <CollegeSearch selectCollege={this.selectCollege} />
               <div className="pt-5"><CollegeCard college={this.state.college} /></div>
+              <div className="pt-5">{fourYearCost(this.state.college['Name'], futureCostCalculator(currentCost, this.state.yearsToCollege))}</div>              
             </CardBody>
           </Card>
         </Col>
-        <Col xs={12} lg={6} className="ml-auto align-self-end">
-        	<div className="pb-5"><CollegeCostChart costData={[currentCost, futureCostCalculator(currentCost, this.state.yearsToCollege)]} collegeName={collegeName} /></div>
-          <div>{fourYearCost(this.state.college['Name'], futureCostCalculator(currentCost, this.state.yearsToCollege))}</div>
+        <Col xs={12} lg={6} className="ml-auto align-self-start align-self-md-center align-self-lg-center">
+        	<div className="pb-2"><CollegeCostChart costData={[currentCost, futureCostCalculator(currentCost, this.state.yearsToCollege)]} collegeName={collegeName} /></div>
         </Col>
       </Row>
     );

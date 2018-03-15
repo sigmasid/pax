@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Fade, Card, CardBody, Row, Col, Button, Media, CardSubtitle,  CardFooter, ButtonGroup, Alert } from 'reactstrap';
-import ReactBootstrapSlider from 'react-bootstrap-slider';
-
+import { Fade, Card, CardBody, Row, Col, Button, Media, CardSubtitle,  CardFooter } from 'reactstrap';
 import { InvestmentsStrategyChart, InvestmentMix, ChangeMixButtons, AgeSlider } from '../charts/InvestmentStrategyChart.js';
 
 import investmentsImage from '../images/investments_icon_2x.png'; // Tell Webpack this JS file uses this image
@@ -71,16 +69,9 @@ class Investments extends Component {
     var changeMixButtons =
       <Fade in={this.state.isEditing}>
         <div className={this.state.isEditing ? "d-block" : "d-none"}>
-          { ChangeMixButtons(this.state.selectedStrategy, this.changeStrategy, this.props.strategyLabels, this.props.strategyDescriptions ) }  
+          { ChangeMixButtons(this.state.selectedStrategy, this.changeStrategy, this.props.beneficiaryName ) }  
         </div>
       </Fade>
-
-    var ageSlider = 
-        <Row className="d-flex align-items-center">
-          <Col xs={3} sm={4} className="text-center"><span className="bg-light strong">Age: {InvestmentMix.ageLabels[this.state.selectedAge]}</span></Col>
-          <Col xs={8} lg={6}><ReactBootstrapSlider value={this.state.selectedAge} ticks={[...Array(12).keys()]} change={this.changeAge} /></Col>
-        </Row>
-
     
     return (
     <Card className="Dashboard-component mb-5 mt-5">
@@ -119,17 +110,15 @@ class Investments extends Component {
       </CardBody>
       { changeMixButtons }
       <CardBody>
+        <div className="Investment-mix">
+          <InvestmentsStrategyChart investmentSet={this.state.investmentOptions[this.state.selectedAge]} selectedAge={this.state.selectedAge} />
+        </div>
+      </CardBody>
+      <CardBody>
         <Row>
-          <Col xs={12} >
-            <div className="Investment-mix">
-              <InvestmentsStrategyChart investmentSet={this.state.investmentOptions[this.state.selectedAge]} selectedAge={this.state.selectedAge} />
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} md={6} className="m-auto pt-5">
+          <Col xs={12} md={6} className="m-auto">
             <CardSubtitle className="text-center pt-2 pb-2">Use slider to visualize how we autobalance {this.props.beneficiaryName}'s portfolio with  age. </CardSubtitle>
-            { ageSlider }
+            { AgeSlider(this.state.selectedAge, [...Array(InvestmentMix.ageLabels.length).keys()], InvestmentMix.ageLabels, this.changeAge) }
           </Col>
         </Row>
       </CardBody>

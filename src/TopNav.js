@@ -11,11 +11,7 @@ class TopNav extends Component {
         <NavbarBrand href="/">Pax</NavbarBrand>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <Link to={`/login`}>login</Link>
-          </NavItem>
-
-          <NavItem className="signup-nav-item bg-warning">
-            <Link to={`/signup`}>signup</Link>
+            <Link to={`/plan`}>529 Guide</Link>
           </NavItem>
         </Nav>
       </Navbar>

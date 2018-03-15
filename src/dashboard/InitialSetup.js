@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Fade, Card, CardBody, CardHeader, Row, Col, ButtonGroup, Button, Media, CardSubtitle, CardFooter, CardTitle, ListGroup, ListGroupItem } from 'reactstrap';
+import { Card, CardBody, Row, Col, Button, Media, CardSubtitle } from 'reactstrap';
 import getStartedIcon from '../images/get_started_2x.png'; // Tell Webpack this JS file uses this image
-import doneImage from '../images/done_icon_2x.png'; // Tell Webpack this JS file uses this image
-import { CollegeSearch } from '../home/CollegeSearch.js';
-import CollegeCard from '../home/CollegeCard.js';
-const util = require('util'); //print an object
-
-const formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 0
-});
 
 class InitialSetup extends Component {
   render() {

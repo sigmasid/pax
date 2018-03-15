@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Alert, Label, Row, Col, Card, CardBody, Form, FormGroup, Input, Button } from 'reactstrap';
+import { Container, Alert, Label, Row, Col, Card, CardHeader, CardBody, Form, FormGroup, Input, Button } from 'reactstrap';
 import { Link, Redirect } from 'react-router-dom'
 //const util = require('util'); //print an object
 
@@ -44,17 +44,18 @@ class Login extends Component {
       <div className="Signup-form m-auto">
 			<SignupAlertMessage />
 			<Card className="pt-3">
+        <CardHeader tag="h3" color="font-weight-bold text-center"><strong>Welcome Back!</strong></CardHeader>
     		<CardBody>
 					<Form onSubmit={this.handleSubmit}>
 					  	<FormGroup className="form-row" row>
-			  	            <Label for="accountEmail" sm={2}>Email</Label>
-			  	            <Col sm={10}>
+  	            <Label for="accountEmail" sm={3}>Email</Label>
+  	            <Col sm={9}>
 					    		<Input name="email" placeholder="email" id="accountEmail" className="form-control" />
 				    		</Col>
 					    </FormGroup>
 					  	<FormGroup className="form-row" row>
-			  	            <Label for="accounPassword" sm={2}>Password</Label>
-			  	            <Col sm={10}>
+	  	            <Label for="accounPassword" sm={3}>Password</Label>
+	  	            <Col sm={9}>
 					    		<Input name="password" placeholder="password" id="accounPassword" className="form-control"  />
 				    		</Col>
 					    </FormGroup>

@@ -72,10 +72,10 @@ class SavingsBarChart extends Component {
     const data = (canvas) => {
 
     return {
-      labels: [["Taxable","Savings","Account"],["Taxable","Investment","Account"],"Pax"],
+      labels: [["Taxable","Savings","Account"],["Taxable","Investment","Account"],["Pax"]],
       datasets: 
       [{
-        backgroundColor:["rgba(0, 0, 0, 0.2)","rgba(0, 0, 0, 0.2)","rgba(67, 217, 253, 0.5)"],
+        backgroundColor:["rgba(255, 235, 59, 0.3)","rgba(255, 235, 59, 0.6)","rgba(255, 235, 59, 0.9)"],
         data: this.props.datasets,
         datalabels: {
           align: 'end',
@@ -238,9 +238,9 @@ class SavingsComparison extends Component {
     var data2 = SavingsCalculator(this.state.startingAmount, this.state.monthlyInvestment, this.state.interestRate * ( 1 - this.state.taxRate), this.state.numYears);
     var data3 = SavingsCalculator(this.state.startingAmount, this.state.monthlyInvestment, this.state.savingsAccountRate * ( 1 - this.state.taxRate), this.state.numYears);
 
-    var dataset1 = SavingsData("Pax", data1, 'rgba(255,193,7,0.7)','rgba(255,193,7,1.0)',[]);
-    var dataset2 = SavingsData("Taxable Investment Account", data2, 'rgba(255,234,181,0.7)', 'rgba(255,234,181,1.0)',[15]);
-    var dataset3 = SavingsData("Taxable Savings Account", data3, 'rgba(255,247,223,0.7)','rgba(255,247,223,1.0)',[10]);
+    var dataset1 = SavingsData("Pax", data1, 'rgba(255, 235, 59, 0.3)','rgba(255, 235, 59, 0.3)',[]);
+    var dataset2 = SavingsData("Taxable Investment Account", data2, 'rgba(255, 235, 59, 0.6)', 'rgba(255, 235, 59, 0.6)',[15]);
+    var dataset3 = SavingsData("Taxable Savings Account", data3, 'rgba(255, 235, 59, 0.9)','rgba(255, 235, 59, 0.9)',[10]);
 
     /**
     var dataset1 = SavingsData("Pax", data1, 'rgba(67,217,253,0.7)','rgba(67,217,253,1.0)',[]);
@@ -270,8 +270,8 @@ class SavingsComparison extends Component {
           <Col xs={12} lg={5} className="mr-auto">
             <Card className="Head-start">
             <CardBody>
-              <CardTitle className="display-4 text-center text-sm-left">Get a Head Start</CardTitle>
-              <CardSubtitle className="text-center text-sm-left pb-5 pb-sm-0">Money grows on compounding trees. <br/>Check out the difference starting early makes!</CardSubtitle>
+              <CardTitle>Get a Head Start</CardTitle>
+              <CardSubtitle className="pb-5 pb-sm-0">Money grows on compounding trees. <br/>Check out the difference starting early makes!</CardSubtitle>
               <p className="lead pt-sm-4 pt-0">Starting Investment: <span>{formatter.format(Math.round(this.state.startingAmount))}</span></p>
               <div className="pb-4 pb-sm-4">
                 <ReactBootstrapSlider value={this.state.startingAmount} ticks={StartingAmount} ticks_snap_bounds = {10000} ticks_positions={SliderIntervals} change={this.changeStartingInvestment} />
@@ -293,7 +293,7 @@ class SavingsComparison extends Component {
       	</Row>
         <Row>
           <Col xs={12} lg={7} xl={10} className="ml-auto mx-xl-auto align-self-end text-center">
-            <Alert color="warning" className="mt-5 mt-xl-5 mt-lg-2" ><strong>Pax's 529 College Savings solutions</strong> offer tax-free growth for your investments and tax-free withdrawals for qualified educational expenses.</Alert>
+            <Alert className="Pax-alert mt-5 mt-xl-5 mt-lg-2" ><strong>Pax</strong> helps you setup college savings accounts that offer tax-free investment growth and tax-free withdrawals for qualified educational expenses.</Alert>
           </Col>
         </Row>
       </div>

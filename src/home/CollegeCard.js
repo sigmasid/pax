@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Card, CardHeader, CardFooter, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Row, Col, Card, CardHeader, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 class CollegeCard extends Component {

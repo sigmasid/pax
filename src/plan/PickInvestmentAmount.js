@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Fade, Card, CardBody, CardHeader, CardTitle, ButtonGroup, Button, Media, CardSubtitle, CardFooter, Row, Col } from 'reactstrap';
+import { Card, CardBody, ButtonGroup, Button, CardSubtitle, Row, Col } from 'reactstrap';
 import referralImage from '../images/piggy_bank_2x.png'; // Tell Webpack this JS file uses this image
 import { ProcessStepHeader } from './ProcessStepHeader.js';
 
@@ -10,7 +10,7 @@ const formatter = new Intl.NumberFormat('en-US', {
   minimumFractionDigits: 0
 });
 
-class InvestmentAmount extends Component  {
+class PickInvestmentAmount extends Component  {
   constructor (props) {
     super(props);
 
@@ -63,4 +63,10 @@ class InvestmentAmount extends Component  {
 	}
 }
 
-export default InvestmentAmount;
+PickInvestmentAmount.propTypes = {
+  step: PropTypes.object.isRequired,
+  save: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired
+}
+
+export default PickInvestmentAmount;

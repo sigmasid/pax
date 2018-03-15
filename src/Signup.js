@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Progress, Alert, Label, Row, Col, Card, CardHeader, CardBody, CardFooter, Form, FormGroup, Input, Button } from 'reactstrap';
-import { Link} from 'react-router-dom'
+import { Container, Progress, Label, Row, Col, Card, CardHeader, CardBody, CardFooter, Form, FormGroup, Input, Button } from 'reactstrap';
+import { Link, Redirect } from 'react-router-dom'
 //const util = require('util'); //print an object
 
 function SignupProgressPercent(props) {
@@ -10,11 +10,6 @@ function SignupProgressPercent(props) {
 const SignupProgress = (props) => {
   	return (
 	<div className="Signup-progress">
-	  	 <Row className="pb-2">
-	  		<Col xs={4} className={props.progressValue === 0 ? "text-center text-warning font-weight-bold" : "text-center text-secondary"}>Account</Col>
-	  		<Col xs={4} className={props.progressValue === 1 ? "text-center text-warning font-weight-bold" : "text-center text-secondary"}>Personal</Col>
-	  		<Col xs={4} className={props.progressValue === 2 ? "text-center text-warning font-weight-bold" : "text-center text-secondary"}>Beneficiary</Col>
-	  	</Row>
 	  	<Row>
 	  		<Col xs={12}>
 	      		<Progress value={ SignupProgressPercent(props) } color="warning" />
@@ -208,15 +203,25 @@ class SignupProfile extends Component {
 const SignupAlertMessage = (props) => {
   switch(props.progressValue) {
     case 0:
-        return(<Alert color="warning text-center"><strong>Let's get started!</strong> It will take about 2 minutes to get you on board!</Alert>)
+        return(<CardHeader tag="h3" color="font-weight-bold text-center">
+        				<strong>Let's Get Started!</strong><br/>
+        				<small className="text-secondary">It will take about 2 minutes to get you on board!</small>
+								<SignupProgress progressValue={props.progressValue} />
+        			</CardHeader>)
     case 1:
-        return(<Alert color="warning text-center"><strong>First a bit about you!</strong> As the account holder you can add investments, pick an investing strategy & control who gets the funds!</Alert>)
+        return(<CardHeader tag="h3" color="font-weight-bold text-center">
+        				<strong>Account Holder</strong><br/>
+        				<small className="text-secondary">Add investments, pick strategy & (maybe) get state tax benefits!</small>
+								<SignupProgress progressValue={props.progressValue} />
+        		</CardHeader>)
     case 2:
-        return(<Alert color="warning text-center"><strong>Finally tell us about the future scholar!</strong> Each account has one beneficiary (the student) but you can update this at any time from your dashboard.</Alert>)
-    case 3:
-        return(<Alert color="warning text-center"><strong>Choose one of 3 portfolios</strong> Each portfolio is diversified & automatically optimized based on beneficiary's age!</Alert>)
+        return(<CardHeader tag="h3" color="font-weight-bold text-center">
+        				<strong>Our Scholar!</strong><br/>
+        				<small className="text-secondary">One beneficiary (the scholar) per account but you can update this any time.</small>
+								<SignupProgress progressValue={props.progressValue} />
+        		</CardHeader>)
     default:
-        return(<Alert color="danger text-center"><strong>Uh oh!</strong> Something went wrong!</Alert>)
+        return(<CardHeader tag="h3" color="font-weight-bold text-center"><strong>Uh oh!</strong><br/><small className="text-secondary"> Something went wrong!</small></CardHeader>)
 	}
 };
 
@@ -245,25 +250,28 @@ class Signup extends Component {
   	handleSubmit = (e) => {
   		if (this.state.progressValue < 2) {
     		this.setState({ progressValue: this.state.progressValue + 1 });
+    	} else {
+    		this.setState({ redirect: true });
     	}
   	}
 
   	render() {
+	if (this.state.redirect) {
+    	return <Redirect push to="/dashboard" />;
+  	}
+
     return (
 		<Container className="Container-main" fluid>
 			<div className="Signup-form m-auto">
-			<SignupAlertMessage progressValue={this.state.progressValue} />
 			<Card>
-				<CardHeader>
-					<SignupProgress progressValue={this.state.progressValue} />
-				</CardHeader>
-        		<CardBody> 
-					<Form onSubmit={this.handleSubmit}>
-        				<SignupScreenDetail progressValue={this.state.progressValue} />
+				<SignupAlertMessage progressValue={this.state.progressValue} />
+      		<CardBody> 
+						<Form onSubmit={this.handleSubmit}>
+      				<SignupScreenDetail progressValue={this.state.progressValue} />
 	   					<Button color="warning" onClick={this.handleSubmit} block>{ SignupButtonTitle(this.state.progressValue)}</Button>
-		            	<Row><Col xs={12} className="text-center pt-2">Already have an account?<Link to={'/login'}> Login here</Link></Col></Row>
-        			</Form>
-        		</CardBody>
+            	<Row><Col xs={12} className="text-center pt-2">Already have an account?<Link to={'/login'}> Login here</Link></Col></Row>
+      			</Form>
+      		</CardBody>
         		<CardFooter className="text-center">
 			        <FormGroup check>
 			          <Label check>

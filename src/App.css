@@ -10,6 +10,10 @@ body, button, input {
   font-weight: 700;
 }
 
+.emoji-max-font {
+  font-size: 4rem;
+}
+
 @media (max-width: 767px) {
   .display-4 {
     font-size: 2.5rem;
@@ -50,6 +54,33 @@ body, button, input {
   font-size: large;
 }
 
+.Pax-alert {
+  color: white;
+  background-color: #37474f;
+  border-color: #37474f;
+}
+
+.Pax-accent {
+  background-color: #ffeb3b;
+  border-color: #ffeb3b;
+  border-radius: 2px;
+  color: black;
+}
+
+.Pax-primary {
+  background-color: #37474f;
+  color: white;
+}
+
+.Pax-primary-light {
+  background-color: #62727b;
+  color: white;
+}
+
+.Pax-primary-dark {
+  color: #102027;
+}
+
 button {
   cursor: pointer;
 }
@@ -60,7 +91,7 @@ button {
 }
 
 a:link, a:visited {
-  color: #ffc107;
+  color: white;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border .3s ease-in-out,color .3s ease-in-out;
@@ -68,9 +99,13 @@ a:link, a:visited {
 
 a:hover {
   text-decoration: none;
-  color: #ffc107;
-  border-color: #ffc107;
+  color: white;
+  border-color: #ffeb3b;
   transition: border .1s ease-in-out,color .1s ease-in-out;
+}
+
+.bg-none {
+  background-color: transparent;
 }
 
 .btn-circle {
@@ -96,11 +131,11 @@ a:hover {
 }
 
 .round.hollow {
-    height: 75px;
-    width: 75px;
-    line-height: 75px;
-    -moz-border-radius: 37.5px;
-    border-radius: 37.5px;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
     background-color: #FFF;    
     color: #222;
     text-align: center;
@@ -110,11 +145,11 @@ a:hover {
 }
 
 .round.hollow.sm {
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background: none;    
     color: #868e96;
     text-align: center;
@@ -124,11 +159,24 @@ a:hover {
 }
 
 .round.hollow.sm.active {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     background-color: #FFF;    
     color: #222;
     -webkit-box-shadow: 0px 0px 0px 3px #ffc107;
     -moz-box-shadow: 0px 0px 0px 3px #ffc107;
     box-shadow: 0px 0px 0px 3px #ffc107;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 /** LAYOUT ITEMS **/
@@ -156,7 +204,7 @@ a:hover {
 }
 
 .card-subtitle {
-  color: #868e96 !important;
+  color: #62727b !important;
 }
 
 .absolute-wrapper {
@@ -169,6 +217,32 @@ a:hover {
 
 .vh-80 {
   height: 80vh;
+}
+
+.vh-0 {
+  height: 0px;
+}
+
+.r-0 {
+  right: 0 !important;
+}
+
+.no-padding {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.row-no-padding > [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.border-shadow {
+  box-shadow: 0 30px 50px -24px rgba(0,0,0,.3);
+}
+
+.card-title: {
+  color: #102027;
 }
 
 @media (max-width: 575px) {
@@ -194,9 +268,10 @@ a:hover {
 
 /** NAVBAR **/
 .top-nav{
-  background-color: white;
-  border-bottom: 1px solid #eee;
+  background-color: #37474f;
+  /**border-bottom: 1px solid #eee;**/
   height: 60px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
 }
 
 .navbar-brand {
@@ -216,32 +291,27 @@ a:hover {
 
 .nav-item {
   cursor: pointer;
-  padding: 5px 15px;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
 }
 
 .nav-item a {
-  color: black;
-}
-
-.signup-nav-item {
-  //background-color: #3DC7E8;
-  border-radius: 5px
-}
-
-.signup-nav-item a {
-  text-align: center;
+  color: white;
 }
 /** END: TOP NAV **/
 
 /** HOME PAGE **/
-.Container-index {
+.container-index {
   padding-top: 60px;
 }
 
 .Home-section {
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+.Home-section .card-title {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .Home-section .card, .Home-section li{
@@ -275,6 +345,11 @@ a:hover {
   padding: 0.5rem 2.0rem;
 }
 
+.college-search {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
 .college-search-results {
   z-index: 1000;
   top: 100;
@@ -285,8 +360,18 @@ a:hover {
   height: auto;
 }
 
+.college-search-bar {
+  border: none;
+}
+
 .Home-section .college-card, .Dashboard-component .college-card {
   border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.Home-section .college-card .card-title, .Dashboard-component .college-card .card-title  {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .Home-section .college-card .card-header, .Dashboard-component .college-card .card-header {
@@ -339,51 +424,78 @@ a:hover {
 
 
 .Home-section .card-subtitle {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .Intro-section {
   margin-top: 0;
+  /**
   background-image: url('./images/home_intro_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  **/
 }
 
 
 .Intro-section input {
-  font-size: 3.0rem;
-  background: rgba(255, 255, 255, 0.75);
-  text-align: center;
+  font-size: 2.0rem;
+  background: none;
+  height: 100%;
+  border: none;
+  border-bottom: 3px solid #ffeb3b;
+  border-radius: 0px;
 }
 
 .cost-surprise {
-  background-color: #ffc107;
-  background-image: url('./images/college-cost-surprise.png');
+  /**background-image: url('./images/college-cost-surprise.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; **/
   margin-top: 4rem;
   margin-bottom: 4rem;
   color: white;
 }
 
 .cost-surprise-text {
-  background-color: rgba(0, 0, 0, 0.7);
+  color: black;
 }
 
 .join-section .form-group {
-  width: 90%;
+  width: calc(100% - 50px);
 }
 
 .join-section button {
-  width: 10%;
+  width: 50px;
+  font-size: 1rem;
+  font-weight: 800;
+  background: none;
+}
+
+.join-text {
+  font-size: 1.25rem;
+  font-weight: 800;
+  max-width: calc(100% - 50px);
+}
+
+.join-section .close-button {
+  position: fixed;
+  left: 20px;
+  background: none;
+  width: auto;
+  padding: 0;
+}
+
+.join-section .close-button img {
+  height: 20px;
+  width: 20px;
+  padding: 2px;
 }
 
 @media (min-width: 1200px) {
   .Home-section {
-    min-height: 80vh; 
+    min-height: calc(100vh - 60px); 
     height: auto;
   }
 
@@ -392,16 +504,32 @@ a:hover {
     margin-left: 3rem;
     padding-top: 3rem;
   }
+
+  .Intro-image img {
+    width: 300px;
+    height: auto;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1199px) {
   .Home-section {
     height: auto;
-    min-height: 70vh; 
+    min-height: calc(100vh - 60px); 
+  }
+
+  .Home-section .card-subtitle {
+    font-size: 1.25rem;
   }
 
   .Home-section .carousel-caption p {
     width: 100%;
+  }
+
+  .Intro-image img {
+    width: 250px;
+    height: auto;
+    text-align: center;
   }
 }
 
@@ -419,7 +547,7 @@ a:hover {
 
 @media (max-width: 991px) {
   .Home-section {
-    min-height: 60vh; 
+    min-height: calc(100vh - 60px); 
     height: auto;
   }
 
@@ -434,11 +562,11 @@ a:hover {
   }
 
   .join-section .form-group {
-    width: 80%;
+    max-width: 80%;
   }
 
   .join-section button {
-    width: 20%;
+    max-width: 50px;
   }
 }
 
@@ -451,8 +579,8 @@ a:hover {
 
 @media (max-width: 575px) {
   .Home-section {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 
   .Intro-section {
@@ -475,7 +603,11 @@ a:hover {
 
 /** START: SIGNUP FORM **/
 .Signup-form {
-  max-width: 570px;
+  max-width: 54rem;
+}
+
+.Signup-form .card {
+  padding: 2.5rem;
 }
 
 .Signup-form .card-header {
@@ -484,27 +616,86 @@ a:hover {
   border: 0px;
 }
 
+.Signup-form .card-footer {
+  border-top: 0px solid;
+  background-color: transparent;;
+}
+
 .Signup-form .card-block {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.Signup-form button {
+.Signup-form-button {
+  background: #ffeb3b;
   margin-top: 50px;
+  font-weight: bold;
+  border-color: #ffeb3b;
+  color: black;
 }
+
+.Signup-form:hover {
+  background-color: #ffeb3b;
+  border-color: #ffeb3b;
+}
+
+@media (max-width: 767px) {
+  .Signup-form .card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .Signup-form .card {
+    padding: 0rem;
+  }
+}
+/** END SIGNUP FORM **/
+
+/** BEGIN PLAN CARD **/
+.plan-card {
+  max-width: 25rem;
+  height: 300px;
+}
+
+.plan-card .card {
+  padding: 1.5rem;
+}
+
+.plan-card .card-header {
+  padding: 0.75rem 1.25rem;
+  height: 40%;
+}
+
+.plan-card .card-footer {
+  border-top: 0px solid;
+  background-color: transparent;
+}
+
+.plan-card button {
+  margin-top: 0px;
+}
+
+ .plan-card .plan-terms {
+  font-size: 0.9rem;
+ }
+
+.plan-card-link {
+  color: black !important;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.plan-card-link:hover {
+  color: white !important;
+}
+/** END PLAN CARD **/
+
 
 /** DASHBOARD **/
 .Dashboard-container .card-header {
   background: none;
   border: 0px solid;
-}
-
-.Dashboard-container .btn-group {
-  width: 100%;
-}
-
-.Dashboard-container .Investment-buttons button {
-  width: 33%;
 }
 
 /**
@@ -545,7 +736,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.Dashboard-component .Investment-mix {
+.Investment-mix {
   max-width: 600px;
   margin: 0 auto;
 }

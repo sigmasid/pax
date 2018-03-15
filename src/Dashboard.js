@@ -93,10 +93,9 @@ class LinkedAccounts extends Component {
             </Media>
           </Media>
         </Col>
-        <Col sm={3} md={4} className="text-right d-sm-none">
+        <Col sm={3} md={4} className="text-right d-none d-sm-block">
           <Button className="Update-button btn-circle btn-lg" color={this.state.isEditing ? "success" : "warning"} onClick={this.changeMode} size="sm">
             <img src={this.state.isEditing ? doneImage : editImage } alt="..." />
-            <span className="d-sm-none">{this.state.isEditing ? "done" : "update"}</span>
           </Button>
         </Col>
       </Row>
